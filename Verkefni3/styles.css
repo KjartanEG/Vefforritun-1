@@ -1,0 +1,102 @@
+
+/* almennar skilgreiningar */
+
+html {
+    font-size: 18px;
+}
+h1 {
+    margin-bottom: 1em;
+    font-size: 2em;
+    border-bottom: 1px solid #999;
+}
+h2 {
+    font-size: 1.667em;
+    color: #999;    
+}
+.card-section h2{
+    display: none;
+}
+h3 {
+    font-size: 1em;
+}
+button {
+    font-size: 1em;
+    border:solid 5px;
+    border-color: #999 #999 #666 #666
+}
+button:hover {
+    border:solid 10px;
+    border-color: #666 #666 #999 #999
+}
+
+/* texti */
+
+section.card-text p:first-letter {
+    font-size: 2em;
+}
+section.card-text p:first-of-type {
+    font-size: 1em;
+    margin-left: 0em;
+}
+section.card-text p:first-of-type:first-line {
+    background-color:#ccc
+}
+section.card-text p:nth-of-type(2) {
+    font-size: 0.889em;
+    margin-left: 3.125em;
+}
+section.card-text p:nth-of-type(2):first-line {
+    background-color: #ddd
+}
+section.card-text p:nth-of-type(3) {
+   font-size: 0.778em;
+   margin-left: 7.142em;
+}
+section.card-text p:nth-of-type(3):first-line {
+    background-color: #eee
+}
+
+/* cards */
+
+.cards {
+    margin: 0 auto;
+    max-width: 37em;
+}
+section.card-section div.card {
+    display: inline-block;
+    width: 10em;
+    height: 10em;
+    margin: 0.5em ;
+    padding: 0.5em;
+    border: 1px solid black;
+}
+.card:nth-of-type(even) {
+    background: #333;
+    color: #fff;
+}
+.card:nth-of-type(odd) {
+    background: #fff;
+    color: #333;
+}
+.cards:hover .card:nth-child(even) {
+    background: #fff;
+    color: #333;
+}
+.cards:hover .card:nth-child(odd) {
+    background: #333;
+    color: #fff;
+}
+div.cards button {
+    display: block;
+    margin: 0 auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.cards::after {
+    display: block;
+    border-top: 1px solid #c00;
+    content: "Ekki meira efni";
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-top: 1em; 
+}
